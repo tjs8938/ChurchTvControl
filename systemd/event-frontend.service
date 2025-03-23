@@ -1,0 +1,12 @@
+[Unit]
+Description=Event Manager Frontend Service
+After=network.target
+
+[Service]
+ExecStart=npx serve -s build -l 80
+WorkingDirectory=/path/to/frontend
+Restart=always
+Environment=PATH=/usr/bin
+
+[Install]
+WantedBy=multi-user.target
