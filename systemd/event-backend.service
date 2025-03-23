@@ -1,10 +1,9 @@
 [Unit]
 Description=Event Manager Backend Service
-After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /path/to/backend/app.py
-WorkingDirectory=/path/to/backend
+ExecStart=/usr/bin/python3 app.py
+WorkingDirectory=/home/user/ChurchTvControl/backend
 Restart=always
 
 [Install]

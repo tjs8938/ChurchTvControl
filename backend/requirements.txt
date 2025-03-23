@@ -1,4 +1,3 @@
 flask
 flask-cors
 schedule
-python-cec

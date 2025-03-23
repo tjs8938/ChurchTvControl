@@ -1,10 +1,9 @@
 [Unit]
 Description=Event Manager Frontend Service
-After=network.target
 
 [Service]
 ExecStart=npx serve -s build -l 80
-WorkingDirectory=/path/to/frontend
+WorkingDirectory=/home/user/ChurchTvControl/frontend
 Restart=always
 Environment=PATH=/usr/bin
 
